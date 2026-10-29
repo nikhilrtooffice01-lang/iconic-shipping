@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Admin Dashboard | ICONIC</title>
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/admin.css">
+</head>
+<body class="admin-body">
+<header class="nav solid admin-nav">
+  <a class="brand" href="/"><img src="/assets/logo.jpg" alt="ICONIC SHIPPING SERVICES"></a>
+  <nav aria-label="Admin">
+    <a href="/">Website</a>
+    <button class="cta" id="logoutBtn" type="button">Logout</button>
+  </nav>
+</header>
+
+<main class="section admin">
+  <div class="heading">
+    <div>
+      <p class="eyebrow">PRIVATE ADMIN</p>
+      <h1>Operations Dashboard</h1>
+    </div>
+    <p id="notice" role="status" aria-live="polite"></p>
+  </div>
+
+  <div id="stats" class="stats" aria-label="Enquiry summary"></div>
+
+  <div class="admin-layout">
+    <section class="panel" aria-labelledby="enqTitle">
+      <div class="panel-head">
+        <h2 id="enqTitle">Enquiries</h2>
+        <label class="filter" for="filter">Show
+          <select id="filter">
+            <option value="">All</option>
+            <option>New</option>
+            <option>Processing</option>
+            <option>Quoted</option>
+            <option>Completed</option>
+            <option>Closed</option>
+          </select>
+        </label>
+      </div>
+      <div id="enquiries" class="table"></div>
+    </section>
+
+    <section class="panel quote-panel" aria-labelledby="quoteTitle">
+      <h2 id="quoteTitle">Create Quotation</h2>
+      <div id="quoteBox" class="quote-builder">
+        <p class="empty">Select an enquiry from the list to prepare a quotation.</p>
+      </div>
+    </section>
+  </div>
+</main>
+
+<script src="/config.js"></script>
+<script src="/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+/* Admin dashboard only. Shared brand tokens style.css se aate hain (navy, blue, orange). */
+.admin-body{background:#f4f7fa}
+.admin{padding-top:40px;padding-bottom:70px}
+.admin .heading{align-items:center}
+#notice{min-height:22px;margin:0;font-size:14px;font-weight:700;color:#176a3d;max-width:420px;text-align:right}
+#notice.err{color:#b42318}
+
+/* Header: Logout hamesha dikhe (mobile par bhi). */
+.admin-nav nav{display:flex!important;align-items:center;gap:10px}
+.admin-nav nav a{padding:10px 12px;border-radius:7px;font-size:14px;font-weight:700;color:#fff;border:1px solid #ffffff40;min-height:44px;display:inline-flex;align-items:center}
+.admin-nav nav a:hover{background:#ffffff14}
+.admin-nav .cta{font:inherit;font-size:14px;font-weight:800;min-height:44px;padding:10px 16px;cursor:pointer}
+.admin-nav .cta:hover{background:#f07f40}
+
+/* Stats */
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-bottom:28px}
+.stat{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 20px;box-shadow:0 1px 2px #07142610}
+.stat b{font-size:30px;color:var(--navy);display:block;line-height:1;margin-bottom:8px}
+.stat span{font-size:12px;color:var(--muted);font-weight:800;text-transform:uppercase;letter-spacing:.08em}
+
+/* Panels */
+.admin-layout{display:grid;grid-template-columns:1.25fr .9fr;gap:24px;align-items:start}
+.panel{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px;box-shadow:0 1px 2px #07142608}
+.panel h2{font-size:20px;margin:0;color:var(--navy);letter-spacing:-.02em}
+.panel-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+.filter{font-size:13px;font-weight:700;color:var(--muted);display:flex;gap:8px;align-items:center}
+.filter select{min-height:40px}
+
+/* Enquiry cards */
+.panel .table{background:none;border:0;padding:0}
+.enq{display:grid;grid-template-columns:1fr auto;gap:10px 14px;align-items:center;padding:16px;border:1px solid var(--line);border-radius:11px;margin-bottom:10px;background:#fbfcfd;cursor:pointer;transition:border-color .2s,background .2s,box-shadow .2s}
+.enq:hover{border-color:#9bb5d0;background:#fff}
+.enq.is-active{border-color:var(--orange);box-shadow:0 0 0 3px #e46d2d22;background:#fff}
+.enq:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
+.enq-main{display:grid;gap:3px;min-width:0}
+.enq-main b{color:var(--navy);font-size:14px;letter-spacing:.02em}
+.enq-name{font-weight:700;font-size:14px;color:#172234}
+.enq-meta{font-size:12px;color:var(--muted);overflow-wrap:anywhere;line-height:1.5}
+.enq-side{display:flex;flex-direction:column;align-items:flex-end;gap:8px}
+.enq select{font-size:13px;min-height:44px;min-width:130px;padding:8px 10px;border:1px solid #cfd9e4;border-radius:8px;background:#fff;font-family:inherit}
+.pill{display:inline-block;font-size:12px;font-weight:800;padding:6px 10px;border-radius:999px;background:#e9f2fb;color:var(--blue);white-space:nowrap}
+.pill-ok{background:#e7f6ee;color:#176a3d}
+a.pill-ok:hover{text-decoration:underline}
+.empty{color:var(--muted);font-size:14px;margin:6px 0;line-height:1.6}
+
+/* Quote builder */
+.quote-panel{position:sticky;top:20px}
+.quote-builder{background:none;border:0;padding:0}
+.q-head{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:16px}
+.q-head h3{margin:4px 0;font-size:22px;color:var(--navy)}
+.q-head .eyebrow{margin:0}
+.q-sub{margin:0;font-size:13px;color:var(--muted);line-height:1.5}
+.q-items{border:0;padding:0;margin:0 0 16px;min-width:0}
+.q-items legend{font-size:12px;font-weight:800;letter-spacing:.08em;color:var(--muted);text-transform:uppercase;margin-bottom:10px;padding:0}
+.quote-item{display:grid;grid-template-columns:1fr 78px 118px 44px;gap:8px;margin-bottom:8px;align-items:center}
+.quote-builder input,.quote-builder textarea{width:100%;min-height:44px;font-size:14px;border:1px solid #cfd9e4;border-radius:8px;padding:10px 12px;background:#fff;font-family:inherit;color:#172234}
+.quote-builder textarea{min-height:88px;resize:vertical}
+.quote-builder label{font-size:12px;font-weight:800;color:var(--muted);display:block;margin:0 0 6px}
+.quote-builder .field{display:block;margin-bottom:14px}
+.quote-builder .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.quote-builder .row .field{margin-bottom:0}
+.quote-builder .outline{width:auto;margin:4px 0 0;min-height:44px;padding:10px 14px;background:#fff;color:var(--navy);border:1px dashed #9bb5d0;font-weight:800;cursor:pointer;font-size:14px}
+.quote-builder .outline:hover{border-color:var(--orange);color:var(--orange)}
+.icon-btn{min-width:44px;min-height:44px;border:1px solid #cfd9e4;background:#fff;border-radius:8px;font-size:22px;line-height:1;cursor:pointer;color:#b42318;font-family:inherit}
+.icon-btn:hover{background:#fdecea;border-color:#f3b3ad}
+.q-total{display:flex;justify-content:space-between;align-items:center;gap:12px;background:var(--navy);color:#fff;border-radius:10px;padding:14px 16px;margin:18px 0}
+.q-total span{font-size:12px;color:#b8c7d7;font-weight:800;text-transform:uppercase;letter-spacing:.08em}
+.q-total b{font-size:22px}
+.quote-builder .btn.primary{width:100%;min-height:50px;font-size:15px;border:0;cursor:pointer;font-family:inherit}
+.quote-builder .btn.primary:disabled{opacity:.6;cursor:wait}
+#qmsg{font-size:13px;font-weight:700;color:#176a3d;min-height:20px;margin:12px 0 0;line-height:1.5}
+#qmsg.err{color:#b42318}
+
+/* Responsive */
+@media(max-width:1000px){
+  .admin-layout{grid-template-columns:1fr}
+  .quote-panel{position:static}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  #notice{text-align:left}
+}
+@media(max-width:650px){
+  .admin-nav .brand img{height:42px}
+  .admin-nav nav{gap:6px}
+  .admin-nav nav a{padding:8px 10px;font-size:13px;min-height:40px}
+  .admin-nav .cta{padding:8px 12px;font-size:13px;min-height:40px}
+  .admin{padding-top:28px}
+  .panel{padding:16px}
+  .enq{grid-template-columns:1fr}
+  .enq-side{flex-direction:row;align-items:center;justify-content:space-between;flex-wrap:wrap}
+  .quote-item{grid-template-columns:1fr 70px 100px 44px}
+  .quote-builder .row{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){.enq{transition:none}}
